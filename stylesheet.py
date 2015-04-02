@@ -51,10 +51,28 @@ class WXStyleSheet:
     # Size
     # --------------------------------------------------------------------------
     def width(self, target, value):
-        pass
+        for token in value:
+            if token.type == "PERCENT":
+                # width as percentage of parent
+                if target.GetParent():
+                    w, h = target.GetParent().GetSize()
+                    target.SetSize((int( float(token.value * w)/100.0 ),
+                                    target.GetSize()[1]))
+            elif token.type == "DIMENSION":
+                # pixel or em width
+                target.SetSize((token.value, target.GetSize()[1]))
 
     def height(self, target, value):
-        pass
+        for token in value:
+            if token.type == "PERCENT":
+                # width as percentage of parent
+                if target.GetParent():
+                    w, h = target.GetParent().GetSize()
+                    target.SetSize((target.GetSize()[0],
+                                    int( float(token.value * h)/100.0 )))
+            elif token.type == "DIMENSION":
+                # pixel or em width
+                target.SetSize((target.GetSize()[0], token.value))
 
 
 

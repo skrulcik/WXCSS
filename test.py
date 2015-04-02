@@ -8,7 +8,8 @@ def main():
     frm = wx.Frame(None)
     frm.Show()
     
-    lbl = wx.StaticText(frm, label="This should say something")
+    div = wx.Panel(frm)
+    lbl = wx.StaticText(div, label="This should say something")
 
     app.MainLoop()
 

@@ -29,6 +29,17 @@ class StaticText(wx.StaticText):
     def configure_style(self):
         self.style.apply_rules(self)
 
+class Panel(wx.Panel):
+    def __init__(self, parent, id=-1, pos=wx.DefaultPosition, size=wx.DefaultSize, style= wx.TAB_TRAVERSAL | wx.NO_BORDER, name= wx.PanelNameStr):
+        super(Panel, self).__init__(parent, id, pos, size, style, name)
+        self.token = 'div'
+        if parent:
+            self.token = parent.token + self.token
+        self.style = wx.GetApp().stylesheet
+        self.configure_style()
+    def configure_style(self):
+        self.style.apply_rules(self)
+
 
 
 

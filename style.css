@@ -7,6 +7,8 @@
 
 body {
     background-color: #7E8F7C;
+    width: 500px;
+    height: 400px;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -15,4 +17,6 @@ h1, h2, h3, h4, h5, h6, p {
 
 div {
     background-color: #FDF3E7;
+    width: 300px;
+    height: 200px;
 }
