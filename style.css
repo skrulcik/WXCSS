@@ -1,0 +1,18 @@
+/*
+ Orange: #C63D0F
+ Black: #3B3738
+ Vanilla: #FDF3E7
+ Green: #7E8F7C
+ */
+
+body {
+    background-color: #7E8F7C;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    color: #3B3738;
+}
+
+div {
+    background-color: #FDF3E7;
+}

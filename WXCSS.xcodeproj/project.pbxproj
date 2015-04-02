@@ -6,10 +6,23 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXFileReference section */
+		D20501811ACDCCA200BB900F /* css_util.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = css_util.py; sourceTree = "<group>"; };
+		D21306621AC50A99005666FE /* stylesheet.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = stylesheet.py; sourceTree = "<group>"; };
+		D2C941731AC4F695006477BB /* test.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = test.py; sourceTree = "<group>"; };
+		D2C941741AC4F779006477BB /* elements.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = elements.py; sourceTree = "<group>"; };
+		D2C941751AC4FBC2006477BB /* style.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = style.css; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
 /* Begin PBXGroup section */
 		D2C941681AC4F66A006477BB = {
 			isa = PBXGroup;
 			children = (
+				D20501811ACDCCA200BB900F /* css_util.py */,
+				D21306621AC50A99005666FE /* stylesheet.py */,
+				D2C941751AC4FBC2006477BB /* style.css */,
+				D2C941741AC4F779006477BB /* elements.py */,
+				D2C941731AC4F695006477BB /* test.py */,
 			);
 			sourceTree = "<group>";
 		};
@@ -174,6 +187,7 @@
 				D2C941721AC4F66A006477BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
