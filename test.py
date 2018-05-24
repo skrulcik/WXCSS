@@ -3,7 +3,7 @@ import elements as wx
 import os
 
 def main():
-    app = wx.App('/Users/Scott/Documents/WXCSS/style.css')
+    app = wx.App('./style.css')
     
     frm = wx.Frame(None)
     frm.Show()
